@@ -1,0 +1,11 @@
+CC=gcc
+CFLAGS=-I.-g -DDEBUG
+DEPS = dxcm_ptr_q.h
+OBJ = Queue.o dxcm_ptr_queue.o 
+
+%.o: %.c $(DEPS)
+		$(CC) -c -o $@ $< $(CFLAGS)
+
+ptrQ: $(OBJ)
+		gcc -o $@ $^ $(CFLAGS)
+

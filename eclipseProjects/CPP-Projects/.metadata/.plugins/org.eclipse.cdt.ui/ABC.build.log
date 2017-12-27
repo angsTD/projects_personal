@@ -1,0 +1,16 @@
+02:17:00 **** Incremental Build of configuration Debug for project ABC ****
+make all 
+Building file: ../src/ABC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABC.d" -MT"src/ABC.o" -o "src/ABC.o" "../src/ABC.cpp"
+../src/ABC.cpp:32:15: warning: relational comparison result unused [-Wunused-comparison]
+        for(int i=0;i<3,i++)
+                    ~^~
+../src/ABC.cpp:32:21: error: expected ';' in 'for' statement specifier
+        for(int i=0;i<3,i++)
+                           ^
+1 warning and 1 error generated.
+make: *** [src/ABC.o] Error 1
+
+02:17:00 Build Finished (took 494ms)
+

@@ -1,0 +1,203 @@
+02:09:02 **** Clean-only build of configuration Debug for project ABC ****
+make clean 
+rm -rf  ./src/ABC.o  ./src/ABC.d  ABC
+ 
+02:09:02 **** Build of configuration Debug for project ABC ****
+make all 
+Building file: ../src/ABC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABC.d" -MT"src/ABC.o" -o "src/ABC.o" "../src/ABC.cpp"
+../src/ABC.cpp:14:6: error: no matching member function for call to 'append'
+        str.append(a);
+        ~~~~^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1477:19: note: candidate function not viable: no known conversion from 'char' to 'const value_type *' (aka 'const char *') for 1st argument; take the address of the argument with &
+    basic_string& append(const value_type* __s);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1474:19: note: candidate function not viable: no known conversion from 'char' to 'const std::__1::basic_string<char>' for 1st argument
+    basic_string& append(const basic_string& __str);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1486:9: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+        append(_InputIterator __first, _InputIterator __last);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1493:9: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+        append(_ForwardIterator __first, _ForwardIterator __last);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1476:19: note: candidate function not viable: requires 2 arguments, but 1 was provided
+    basic_string& append(const value_type* __s, size_type __n);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1478:19: note: candidate function not viable: requires 2 arguments, but 1 was provided
+    basic_string& append(size_type __n, value_type __c);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:1475:19: note: candidate function not viable: requires at least 2 arguments, but 1 was provided
+    basic_string& append(const basic_string& __str, size_type __pos, size_type __n=npos);
+                  ^
+1 error generated.
+make: *** [src/ABC.o] Error 1
+02:09:04 **** Clean-only build of configuration Debug for project ABoardGameAngelo ****
+make clean 
+rm -rf  ./src/ABoardGameAngelo.o  ./src/ABoardGameAngelo.d  ABoardGameAngelo
+ 
+02:09:04 **** Build of configuration Debug for project ABoardGameAngelo ****
+make all 
+Building file: ../src/ABoardGameAngelo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABoardGameAngelo.d" -MT"src/ABoardGameAngelo.o" -o "src/ABoardGameAngelo.o" "../src/ABoardGameAngelo.cpp"
+Finished building: ../src/ABoardGameAngelo.cpp
+ 
+Building target: ABoardGameAngelo
+Invoking: MacOS X C++ Linker
+g++  -o "ABoardGameAngelo"  ./src/ABoardGameAngelo.o   
+Finished building target: ABoardGameAngelo
+ 
+02:09:05 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o ./src/abba.o ./src/testsource.o  ./src/HelloWorld.d ./src/abba.d ./src/testsource.d  HelloWorld
+ 
+02:09:05 **** Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:59:10: warning: unused variable 'isStringEq' [-Wunused-variable]
+    bool isStringEq = false;
+         ^
+1 warning generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building file: ../src/abba.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/abba.d" -MT"src/abba.o" -o "src/abba.o" "../src/abba.cpp"
+Finished building: ../src/abba.cpp
+ 
+Building file: ../src/testsource.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testsource.d" -MT"src/testsource.o" -o "src/testsource.o" "../src/testsource.cpp"
+Finished building: ../src/testsource.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o ./src/abba.o ./src/testsource.o   
+Finished building target: HelloWorld
+ 
+02:09:06 **** Clean-only build of configuration Debug for project TestProj ****
+make clean 
+rm -rf  ./src/TestProj.o  ./src/TestProj.d  TestProj
+ 
+02:09:06 **** Build of configuration Debug for project TestProj ****
+make all 
+Building file: ../src/TestProj.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestProj.d" -MT"src/TestProj.o" -o "src/TestProj.o" "../src/TestProj.cpp"
+../src/TestProj.cpp:21:19: warning: variable 'echo' is uninitialized when used here [-Wuninitialized]
+        cout<<"echo : "<<echo<<endl;
+                         ^~~~
+../src/TestProj.cpp:19:15: note: initialize the variable 'echo' to silence this warning
+        uint32_t echo;
+                     ^
+                      = 0
+1 warning generated.
+Finished building: ../src/TestProj.cpp
+ 
+Building target: TestProj
+Invoking: Cross G++ Linker
+g++  -o "TestProj"  ./src/TestProj.o   
+Finished building target: TestProj
+ 
+02:10:09 **** Incremental Build of configuration Debug for project ABC ****
+make all 
+Building file: ../src/ABC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABC.d" -MT"src/ABC.o" -o "src/ABC.o" "../src/ABC.cpp"
+../src/ABC.cpp:17:2: warning: control reaches end of non-void function [-Wreturn-type]
+        }
+        ^
+1 warning generated.
+Finished building: ../src/ABC.cpp
+ 
+Building target: ABC
+Invoking: MacOS X C++ Linker
+g++  -o "ABC"  ./src/ABC.o   
+Finished building target: ABC
+ 
+02:10:10 **** Incremental Build of configuration Debug for project ABoardGameAngelo ****
+make all 
+make: Nothing to be done for `all'.
+02:10:10 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+02:10:10 **** Incremental Build of configuration Debug for project TestProj ****
+make all 
+make: Nothing to be done for `all'.
+02:14:10 **** Incremental Build of configuration Debug for project ABC ****
+make all 
+Building file: ../src/ABC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABC.d" -MT"src/ABC.o" -o "src/ABC.o" "../src/ABC.cpp"
+../src/ABC.cpp:16:15: warning: if statement has empty body [-Wempty-body]
+        if(ch == 'A');
+                     ^
+../src/ABC.cpp:16:15: note: put the semicolon on a separate line to silence this warning
+../src/ABC.cpp:21:2: error: expected expression
+        else if(ch == 'B')
+        ^
+../src/ABC.cpp:31:20: error: expected expression
+        k = calculateK(k, )
+                          ^
+1 warning and 2 errors generated.
+make: *** [src/ABC.o] Error 1
+02:14:11 **** Incremental Build of configuration Debug for project ABoardGameAngelo ****
+make all 
+make: Nothing to be done for `all'.
+02:14:11 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+02:14:11 **** Incremental Build of configuration Debug for project TestProj ****
+make all 
+make: Nothing to be done for `all'.
+02:16:17 **** Incremental Build of configuration Debug for project ABC ****
+make all 
+Building file: ../src/ABC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABC.d" -MT"src/ABC.o" -o "src/ABC.o" "../src/ABC.cpp"
+../src/ABC.cpp:33:2: warning: control reaches end of non-void function [-Wreturn-type]
+        }
+        ^
+1 warning generated.
+Finished building: ../src/ABC.cpp
+ 
+Building target: ABC
+Invoking: MacOS X C++ Linker
+g++  -o "ABC"  ./src/ABC.o   
+Finished building target: ABC
+ 
+02:16:18 **** Incremental Build of configuration Debug for project ABoardGameAngelo ****
+make all 
+make: Nothing to be done for `all'.
+02:16:19 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+02:16:19 **** Incremental Build of configuration Debug for project TestProj ****
+make all 
+make: Nothing to be done for `all'.
+02:17:00 **** Incremental Build of configuration Debug for project ABC ****
+make all 
+Building file: ../src/ABC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ABC.d" -MT"src/ABC.o" -o "src/ABC.o" "../src/ABC.cpp"
+../src/ABC.cpp:32:15: warning: relational comparison result unused [-Wunused-comparison]
+        for(int i=0;i<3,i++)
+                    ~^~
+../src/ABC.cpp:32:21: error: expected ';' in 'for' statement specifier
+        for(int i=0;i<3,i++)
+                           ^
+1 warning and 1 error generated.
+make: *** [src/ABC.o] Error 1
+02:17:00 **** Incremental Build of configuration Debug for project ABoardGameAngelo ****
+make all 
+make: Nothing to be done for `all'.
+02:17:01 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+02:17:01 **** Incremental Build of configuration Debug for project TestProj ****
+make all 
+make: Nothing to be done for `all'.
